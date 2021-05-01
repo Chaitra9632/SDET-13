@@ -66,7 +66,7 @@ public class WebDriverUtility {
     	   }
     	   catch(Throwable e)
     	   {
-    		   Thread.sleep(5000);
+    		   Thread.sleep(1000);
     		   count++;
     	   }
        }
