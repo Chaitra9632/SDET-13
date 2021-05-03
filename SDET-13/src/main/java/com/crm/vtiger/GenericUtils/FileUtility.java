@@ -4,8 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.util.Properties;
 
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
 
 /**
  * 
@@ -33,10 +34,10 @@ public class FileUtility {
 	 */
 	public String getDataFromJson(String jsonKey) throws Throwable {
 		FileReader reader=new FileReader(IPathConstant.JSONFILEPATH);
-		JsonParser parser=new JsonParser();
+		JSONParser parser=new JSONParser();
 		Object object = parser.parse(reader);
-		JsonObject jsonObject = (JsonObject)object;
-		String value=jsonObject.get(jsonKey).getAsString();
+		JSONObject jsonObject = (JSONObject)object;
+		String value=jsonObject.get(jsonKey).toString();
 		return value;
 	}
 

@@ -5,14 +5,14 @@ import java.util.Random;
 
 /**
  * This class contains java specific generic libraries
- * @Chaitra
+ * @author Chaitra
  */
 
 public class JavaUtility {
 	
 	/**
 	 * generate random number 
-	 * @Chaitra
+	 * @author Chaitra
 	 * 
 	 */
 	public static String getRandomData()
@@ -24,7 +24,7 @@ public class JavaUtility {
 	
 	/**
 	 * Generate current system date
-	 * @Chaitra
+	 * @author Chaitra
 	 */
 	public String getCurrentSystemDate()
 	{
